@@ -39,4 +39,12 @@ public class Warehouse {
             doors.add(d);
         }
     }
+
+    public void printDoors() {
+        int i = 1;
+        for (Door d : doors) {
+            System.out.println(i + " " + d);
+            i++;
+        }
+    }
 }
