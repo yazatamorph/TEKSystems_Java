@@ -3,7 +3,7 @@ package DoorsAndLocks;
 import java.util.*;
 
 public class Warehouse {
-    public ArrayList<Door> doors = new ArrayList();
+    public ArrayList<Door> doors = new ArrayList<Door>();
 
     public Warehouse() {
         int i = 0;
