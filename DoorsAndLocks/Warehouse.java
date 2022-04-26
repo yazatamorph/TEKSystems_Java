@@ -14,7 +14,7 @@ public class Warehouse {
         }
         // i is 10 through 99
         for (; i < 100; i++) {
-            int num = (int)Math.random() * 4;
+            int num = (int)(Math.random() * 4);
             Keyshape shape;
 
             switch (num) {
@@ -43,7 +43,11 @@ public class Warehouse {
     public void printDoors() {
         int i = 1;
         for (Door d : doors) {
-            System.out.println(i + " " + d);
+            if (d.key() != null) {
+                System.out.println(i + " " + d + " Shape: " + d.key().shape());
+            } else {
+                System.out.println(i + " " + d + " Shape: No Key");
+            }
             i++;
         }
     }
